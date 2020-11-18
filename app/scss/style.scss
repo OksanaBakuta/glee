@@ -3,6 +3,140 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  margin: 52px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__img{
+    margin-right: 12px;
+  }
+  &__text{
+    @extend %rubik-500;
+    color: $logo;
+    font-size: 36px;
+    line-height: 58px;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__item + .menu__item{
+    margin-left: 34px;
+  }
+  &__item-link{
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: $logo;
+  }
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &__search{
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    background-color: #edf1f4;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    &-img{
+      margin: auto;
+    }
+  }
+
+  &__act{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 18px;
+    
+  }
+  &__act-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcd7b6;
+    height: 52px;
+    width: 89px;
+    position: relative;
+  }
+  &__act-right{
+    border-radius: 50px 0 0 50px;
+  }
+  &__act-left{
+    border-radius: 0 50px 50px 0;
+  }
+  &__link-num{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 24px;
+    top: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 17px;
+    color: $logo;
+  }
+  &__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  &__btn-icon{
+    display: flex;
+  }
+  &__btn-icon + .user__btn-icon{
+    margin-top: 3px;
+  }
+  &__btn-icon-c{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  &__btn-icon-c + .user__btn-icon-c{
+    margin-left: 3px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
