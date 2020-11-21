@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libr';
 @import 'global';
 
 .header{
@@ -225,6 +226,93 @@
   }
 }
 
+.top-slider{
+  &__slider{
+    background-color: #fcd7b6;
+    padding: 212px 0 43px;
+  }
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 204px;
+  }
+  &__title{
+    max-width: 470px;
+    margin-bottom: 28px;
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+  }
+  &__text{
+    max-width: 370px;
+    margin-bottom: 39px;
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+  }
+  &__link{
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    padding: 22px 98px 22px 25px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 0 10px;
+      button{
+      border: none;
+      border-radius: 50%;
+      background-color: #fff;
+      width: 30px;
+      height: 30px;
+      @extend %rubik-500;
+      font-size: 11px;
+      line-height: 9px;
+      color: #243f4d;
+      opacity: 0.3;
+      }
+      &.slick-active{
+       button{
+        opacity: 1;
+         }
+      }
+    }
+  }
+}
+
+.info{
+  &__inner{
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0;
+  }
+  &__item{
+    padding-left: 76px;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+  &__text{
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+    max-width: 300px;
+  }
+  &__support{
+    max-width: 280px;
+  }
+}
 
 
 
