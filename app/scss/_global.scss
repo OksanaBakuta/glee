@@ -23,3 +23,25 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.title{
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: $title;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.filter-btn{
+  outline-color: transparent;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @extend %dmsans-700;
+  font-size: 16px;
+  color: $btn;
+  margin-bottom: 80px;
+  &:hover{
+    color: #191919;
+  }
+}
