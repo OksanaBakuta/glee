@@ -9,5 +9,6 @@ $(function(){
   });
 
   var mixer = mixitup('.product-filter__items');
+  var mixer = mixitup('.desing__items');
 
 });
