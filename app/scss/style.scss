@@ -285,8 +285,6 @@
 .info{
   &__inner{
     background-color: #fef7f0;
-    /* display: flex;
-    justify-content: space-around; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 45px 0;
@@ -666,12 +664,95 @@
     justify-content: space-around;
     align-items: center;
     padding: 250px 0 90px;
+    &.partners__inner-page{
+      padding: 75px 0 90px;
+    }
   }
 }
 
+.login{
+  padding: 115px 0;
+  display: flex;
+  justify-content: center;
+  &__create{
+    margin-top: 32px;
+    text-align: center;
+  }
+  &__create-text{
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #436372;
+    margin-bottom: 20px;
+  }
+  &__create-link{
+    display: inline-block;
+    padding: 17px 150px;
+    border: 2px solid #a3bbc8;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #243f4d;
+  }
+}
 
+.login-form{
+  width: 470px;
+  border-bottom: 2px solid #f6f6f6;
+  padding-bottom: 34px;
+  &__label,
+  &__text{
+    display: block;
+    @extend %rubik-400;
+    font-size: 14px;
+    color: #436372;
+  }
+  &__input{
+    display: block;
+    max-width: 470px;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #f6f6f6;
+    margin: 12px 0 25px;
+  }
+  &__btn{
+    width: 100%;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
+    @extend %rubik-500;
+    font-size: 18px;
+    color: #fff;
+    padding: 19px 0;
+    margin-bottom: 31px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__label-checkbox{
+    cursor: pointer;
+  }
+  &__input-check{
+    @extend %checkbox;
+    &:checked + .login-form__checkbox{
+      background-image: url('../images/icons/check-on.svg');
+      background-repeat: no-repeat;
+      background-position: 80% center;
 
-
+    }
+  }
+  &__checkbox{
+    padding: 0 8px;
+    background-color: #ebebeb;
+    border-radius: 2px;
+    margin-right: 12px;
+  }
+  &__link{
+    color: inherit;
+  }
+}
 
 
 

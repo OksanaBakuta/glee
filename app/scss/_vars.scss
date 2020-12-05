@@ -1,6 +1,3 @@
-/* $accent: #fe3e57;
-$default: #8d8d8d;
-$title: #29282d; */
 $logo: #436372;
 $footer: #7b7b7b;
 $title: #191919;
@@ -27,6 +24,11 @@ $btn: #8b8b8b;
   font-weight: 700;
 }
 
+%rubik-300{
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
 %rubik-400{
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
@@ -35,6 +37,14 @@ $btn: #8b8b8b;
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%checkbox{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 @function max($numbers...) {
