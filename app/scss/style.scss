@@ -569,6 +569,9 @@
   &__top-title{
     margin-bottom: 0;
   }
+  &__top-title--terms{
+    color: #243f4d;
+  }
   &__link{
     @extend %dmsans-700;
     font-size: 16px;
@@ -584,6 +587,12 @@
       background-repeat: no-repeat;
       right: 0;
       top: 5px;
+    }
+    &.insights__link--terms{
+      color: #243f4d;
+      &::after{
+        background-image: url('../images/icons/shape.svg');
+      }
     }
   }
   &__items{
@@ -754,7 +763,37 @@
   }
 }
 
-
+.terms{
+  padding: 114px 0 70px;
+  .terms__title{
+    @extend %rubik-500;
+    font-size: 24px;
+    color: #243f4d;
+    margin-bottom: 20px;
+  }
+  &__title-link{
+    color: inherit;
+  }
+  ol.terms__list{
+    padding-left: 26px;
+    list-style-type: decimal-leading-zero;
+    margin-bottom: 70px;
+  }
+  &__item,
+  &__text{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 27px;
+  }
+  &__text{
+    margin-bottom: 64px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
 
 
 
