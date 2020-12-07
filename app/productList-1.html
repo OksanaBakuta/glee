@@ -84,7 +84,7 @@
     <div class="breadcrumbs">
       <div class="container">
         <h3 class="breadcrumbs__title">
-          Terms & Conditions
+          Product list 1
         </h3>
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
@@ -94,151 +94,187 @@
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">
-              Terms & Conditions
+              Product list 1
             </a>
           </li>
         </ul>
       </div>
     </div>
 
-    <section class="terms">
+    <section class="product">
       <div class="container">
-        <h4 class="terms__title">
-          Types of Personal Information We Collect
-        </h4>
-        <ol class="terms__list">
-          <li class="terms__item">
-            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore
-          </li>
-          <li class="terms__item">
-            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore
-          </li>
-          <li class="terms__item">
-            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </li>
-          <li class="terms__item">
-            Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </li>
-          <li class="terms__item">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          </li>
-        </ol>
-        <h4 class="terms__title">
-          How <a class="terms__title-link" href="marketpmss.com">marketpmss.com</a> Collects Personal Infonnation
-        </h4>
-        <p class="terms__text">
-          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore
-        </p>
-        <h4 class="terms__title">
-          How marketprosscom Uses Personal Information
-        </h4>
-        <p class="terms__text">
-          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore
-        </p>
+
+        <div class="filters">
+
+          <div class="filter-category">
+            <h5 class="filters__title">
+              CATEGORY
+            </h5>
+            <form class="filter-category__form filter-form" action="#">
+              <label class="filter-form__label">
+                <input class="filter-form__input" type="checkbox">
+                <div class="filter-form__checkbox">
+                  <span>Chair</span>
+                  <img class="filter-form__checkbox-img" src="images/icons/shape.svg" alt="arrow">
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input" type="checkbox">
+                <div class="filter-form__checkbox">
+                  <span>Table</span>
+                  <img class="filter-form__checkbox-img" src="images/icons/shape.svg" alt="arrow">
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input" type="checkbox">
+                <div class="filter-form__checkbox">
+                  <span>Lamp</span>
+                  <img class="filter-form__checkbox-img" src="images/icons/shape.svg" alt="arrow">
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input" type="checkbox">
+                <div class="filter-form__checkbox">
+                  <span>Watch</span>
+                  <img class="filter-form__checkbox-img" src="images/icons/shape.svg" alt="arrow">
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input" type="checkbox">
+                <div class="filter-form__checkbox">
+                  <span>Clock</span>
+                  <img class="filter-form__checkbox-img" src="images/icons/shape.svg" alt="arrow">
+                </div>
+              </label>
+            </form>
+          </div>
+
+          <div class="filter-prise">
+            <h5 class="filters__title">
+              PRICE
+            </h5>
+            <form class="filter-prise__form" action="#">
+              <input class="filter-prise__input" type="text" data-min="0.00" data-max="1000.00" data-from="100.00"
+                data-to="500.00">
+              <label class="filter-prise__label">
+                <span class="filter-prise__num">
+                  $<span class="filter-prise__from"></span>
+                </span>
+                <span class="filter-prise__num">
+                  $<span class="filter-prise__to"></span>
+                </span>
+              </label>
+            </form>
+          </div>
+
+          <div class="filter-brand">
+            <h5 class="filters__title">
+              brand
+            </h5>
+            <form class="filter-brand__form filter-form">
+              <label class="filter-form__label">
+                <input class="filter-form__input filter-brand-input" type="checkbox">
+                <div class="filter-form__checkbox filter-brand__checkbox">
+                  <span>RFL</span>
+                  <span class="filter-brand__num">(10)</span>
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input filter-brand-input" type="checkbox">
+                <div class="filter-form__checkbox filter-brand__checkbox">
+                  <span>Brothers</span>
+                  <span class="filter-brand__num">(21)</span>
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input filter-brand-input" type="checkbox">
+                <div class="filter-form__checkbox filter-brand__checkbox">
+                  <span>Regal</span>
+                  <span class="filter-brand__num">(3)</span>
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input filter-brand-input" type="checkbox">
+                <div class="filter-form__checkbox  filter-brand__checkbox">
+                  <span>Nadia</span>
+                  <span class="filter-brand__num">(14)</span>
+                </div>
+              </label>
+              <label class="filter-form__label">
+                <input class="filter-form__input filter-brand-input" type="checkbox">
+                <div class="filter-form__checkbox  filter-brand__checkbox">
+                  <span>Otobi</span>
+                  <span class="filter-brand__num">(6)</span>
+                </div>
+              </label>
+            </form>
+          </div>
+
+          <div class="resent">
+            <h5 class="filters__title">
+              RECENT PRODUCTS
+            </h5>
+            <div class="resent__inner">
+              <div class="resent__item">
+                <a class="resent__img-link" href="#">
+                  <img class="resent__img" src="images/led/resed-1.jpg" alt="resent product">
+                </a>
+                <div class="resent__content">
+                  <div class="resent__content-title">
+                    <a class="resent__content-link" href="#">Pendant lamp</a>
+                  </div>
+                  <div class="star resent__star" data-rateyo-rating="4"></div>
+                  <span class="resent__content-price">23$</span>
+                </div>
+              </div>
+              <div class="resent__item">
+                <a class="resent__img-link" href="#">
+                  <img class="resent__img" src="images/led/resed-2.jpg" alt="resent product">
+                </a>
+                <div class="resent__content">
+                  <div class="resent__content-title">
+                    <a class="resent__content-link" href="#">Pendant lamp</a>
+                  </div>
+                  <div class="star resent__star" data-rateyo-rating="4"></div>
+                  <span class="resent__content-price">23$</span>
+                </div>
+              </div>
+              <div class="resent__item">
+                <a class="resent__img-link" href="#">
+                  <img class="resent__img" src="images/led/resed-3.jpg" alt="resent product">
+                </a>
+                <div class="resent__content">
+                  <div class="resent__content-title">
+                    <a class="resent__content-link" href="#">Pendant lamp</a>
+                  </div>
+                  <div class="star resent__star" data-rateyo-rating="4"></div>
+                  <span class="resent__content-price">23$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="product-content">
+
+        </div>
+
       </div>
     </section>
 
-    <section class="insights-partners">
-      <div class="insights">
-        <div class="container">
-          <div class="insights__top">
-            <h3 class="title insights__top-title insights__top-title--terms">
-              Our Insights & Articles
-            </h3>
-            <a class="insights__link insights__link--terms" href="#">
-              View All
-            </a>
-          </div>
-          <div class="insights__items">
-            <div class="insights__item">
-              <a class="insights__imglink" href="#">
-                <img class="insights__img" src="images/product/insight/1.jpg" alt="desing">
-              </a>
-              <div class="insights__box">
-                <a class="insights__text-link" href="#">
-                  <p class="insights__text">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </p>
-                </a>
-                <div class="insights__inner">
-                  <div class="insights__date">
-                    28 JANUARY, 2020
-                  </div>
-                  <div class="insights__autor">
-                    <a class="insights__autorlink" href="#">
-                      BY ADMIN
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="insights__item">
-              <a class="insights__imglink" href="#">
-                <img class="insights__img" src="images/product/insight/2.jpg" alt="desing">
-              </a>
-              <div class="insights__box">
-                <a class="insights__text-link" href="#">
-                  <p class="insights__text">
-                    Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  </p>
-                </a>
-                <div class="insights__inner">
-                  <div class="insights__date">
-                    28 JANUARY, 2020
-                  </div>
-                  <div class="insights__autor">
-                    <a class="insights__autorlink" href="#">
-                      BY ADMIN
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="insights__item">
-              <a class="insights__imglink" href="#">
-                <img class="insights__img" src="images/product/insight/3.jpg" alt="desing">
-              </a>
-              <div class="insights__box">
-                <a class="insights__text-link" href="#">
-                  <p class="insights__text">
-                    Rncididunt ut labore et dolore magna aliqua. Ut enim
-                  </p>
-                </a>
-                <div class="insights__inner">
-                  <div class="insights__date">
-                    28 JANUARY, 2020
-                  </div>
-                  <div class="insights__autor">
-                    <a class="insights__autorlink" href="#">
-                      BY ADMIN
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="partners">
+      <div class="container">
+        <div class="partners__inner partners__inner-page">
+          <img class="partners__img" src="images/partners/1.png" alt="partners">
+          <img class="partners__img" src="images/partners/2.png" alt="partners">
+          <img class="partners__img" src="images/partners/3.png" alt="partners">
+          <img class="partners__img" src="images/partners/4.png" alt="partners">
+          <img class="partners__img" src="images/partners/5.png" alt="partners">
         </div>
       </div>
-      <div class="partners">
-        <div class="container">
-          <div class="partners__inner">
-            <img class="partners__img" src="images/partners/1.png" alt="partners">
-            <img class="partners__img" src="images/partners/2.png" alt="partners">
-            <img class="partners__img" src="images/partners/3.png" alt="partners">
-            <img class="partners__img" src="images/partners/4.png" alt="partners">
-            <img class="partners__img" src="images/partners/5.png" alt="partners">
-          </div>
-        </div>
-      </div>
+    </div>
     </section>
 
 

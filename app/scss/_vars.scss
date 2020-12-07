@@ -2,6 +2,7 @@ $logo: #436372;
 $footer: #7b7b7b;
 $title: #191919;
 $btn: #8b8b8b;
+$accent: #243f4d;
 
 
 %dmsans-400{
@@ -37,6 +38,11 @@ $btn: #8b8b8b;
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%rubik-700{
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
 }
 
 %checkbox{

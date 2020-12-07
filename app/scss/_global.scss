@@ -92,3 +92,21 @@ body{
     color: inherit;    
   }
 }
+
+.btn-link{
+  position: relative;
+  background-color: #a3bbc8;
+  font-size: 15px;
+  color: #fff;
+  padding: 22px 98px 22px 25px;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 9px;
+    background-image: url('../images/shape.svg');
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
