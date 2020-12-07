@@ -350,15 +350,27 @@
 
 .product-item{
     max-width: 271px;
-    height: 380px;
-    padding: 25px 15px 37px;
+    padding-bottom: 37px;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     border-radius: 10px;
+    text-align: center;
+    
   &__box-img{
-    height: 206px;
+    height: 250px;
     overflow: hidden;
-    position: relative;
     margin-bottom: 72px;
+    position: relative;
+  }
+  &__img{
+    object-fit: cover;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__img--bag{
+    left: 55%;
   }
   &__box-link{
     position: absolute;
@@ -401,14 +413,7 @@
     width: 22px;
     height: 18px;
   }
-  &__img{
-    object-fit: cover;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+
   &__title{
     @extend %dmsans-500;
     font-size: 16px;
@@ -558,7 +563,7 @@
     align-items: center;
     margin-bottom: 40px;
   }
-  &__top--about{
+  &__top--accent{
     .insights__top-title,
     .insights__link{
       color: $accent;
@@ -806,8 +811,26 @@
   }
 }
 
-.product{
+.catalog{
   padding: 117px 0 115px;
+  &__inner{
+    display: flex;
+  }
+  &__content{
+    max-width: 870px;
+    width: 100%;
+  }
+  &__content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+  &__item{
+    max-width: 270px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .filters{
@@ -965,6 +988,45 @@
     margin-bottom: 10px;
     padding: 0;
   }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__list{
+    display: flex;
+  }
+  &__link{
+    padding: 15px 20px;
+    border: 1px solid #a3bbc8;
+    @extend %rubik-400;
+    font-size: 16px;
+    color: $accent;
+    &.pagination__link--active{
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+  &__item + .pagination__item{
+    margin-left: 15px;
+  }
+  &__prev{
+    display: none;
+    &.pagination__prev--active{
+      display: block;
+      margin-right: 15px;
+    }
+  }
+  &__next{
+    display: none;
+    &.pagination__next--active{
+      display: block;
+      margin-left: 15px;
+    }
+  }
+
+  
 }
 
 .mission{
