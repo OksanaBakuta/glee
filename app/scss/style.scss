@@ -16,6 +16,15 @@
 
 
 .menu{
+  &__item{
+    position: relative;
+  }
+  &__item:hover{
+    .submenu{
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
   &__list{
     display: flex;
   }
@@ -27,6 +36,41 @@
     font-size: 15px;
     line-height: 12px;
     color: $logo;
+  }
+}
+
+ul.submenu{
+  padding: 10px 20px 10px 10px; 
+}
+.submenu{
+  opacity: 0;
+  transform: scaleY(0);
+	transform-origin :0 0;
+  transition: .5s ease-in-out;
+  border: 2px solid $default;
+  position: absolute;
+  top: 22px;
+  left: -20px;
+  background-color: #fff;
+
+  &__item{
+    width: 150px;
+    padding: 5px 20px 5px 10px;
+    transition: all 2s;
+    cursor: pointer;
+    &:hover{
+      .submenu__item-link{
+        border-bottom: 1px solid $default;
+      }
+    }
+  }
+  &__item-link{
+    display: inline-block;
+    @extend %rubik-400;
+    font-size: 15px;
+    color: $accent;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -967,10 +1011,14 @@
         width: 18px;
         height: 18px;
       }
+      &.jq-ry-container{
+      width: 90px !important;
+      }
     }
     .resent-item__content-price{
       font-size: 30px;
     }
+    
   }
   &__content-inner{
     display: none;
@@ -993,6 +1041,8 @@
     justify-content: center;
     align-items: center;
     transition: all .3s;
+    cursor: pointer;
+    border: none;
     svg{
       width: 22px;
     }
@@ -2285,6 +2335,7 @@
     border-radius: 5px;
     background-color: $default;
     display: block;
+    cursor: pointer;
   }
 }
 
