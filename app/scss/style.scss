@@ -431,6 +431,7 @@ ul.submenu{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: all .3s;
     transform: translateY(300%);
   }
   &:hover{
@@ -445,6 +446,7 @@ ul.submenu{
     padding: 12px;
     cursor: pointer;
     border: none;
+    transition: all .3s;
     path{
       transition: all .3s;
     }
@@ -1934,13 +1936,21 @@ ul.submenu{
     line-height: 30px;
     color: #666;
   }
+  &__social{
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    max-width: 300px;
+  }
   &__tags,
-  &__share{
-    display: flex;
-    align-items: center;
+  &__social-title{
     @extend %rubik-400;
     font-size: 16px;
     color: #333;
+  }
+  &__tags,
+  &__share{
+    display: flex;
+    flex-wrap: wrap;
   }
   &__tags{
     margin-bottom: 15px;
@@ -1952,15 +1962,6 @@ ul.submenu{
         color: $accent;
       }
     }
-    span{
-      margin-right: 31px;
-    }
-  }
-  &__share{
-    span{
-      margin-right: 20px;
-    }
-    
   }
   &__share-item{
     transition: all .3s;
